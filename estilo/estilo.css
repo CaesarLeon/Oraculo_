@@ -89,9 +89,10 @@ body {
 /* feed */
 .feed {
   flex: 0.5;
-  border-right: 1px solid var(--twitter-background);
+  border-right: 1px solid #222;
   min-width: fit-content;
   overflow-y: scrollbar;
+  height: 3000px;
 }
 
 .feed__header {
