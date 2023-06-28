@@ -1,0 +1,1311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --twitter-color: #50b7f5;
+  --twitter-background: #e6ecf0;
+  background-color: #303338;
+}
+
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #303338;
+}
+
+.sidebarOption .material-icons,
+.fa-twitter {
+  padding: 20px;
+}
+
+.sidebarOption h2 {
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.sidebarOption:hover {
+  background-color: var(--twitter-background);
+  border-radius: 30px;
+  color: rgb(247, 125, 255);
+  transition: color 400ms ease-out;
+
+}
+
+.sidebarOption.active {
+  color: rgb(247, 125, 255);
+}
+
+.sidebar__tweet {
+  width: 100%;
+  background-color: var(--twitter-color);
+  background: #F77DFF;
+  border: none;
+  color: white;
+  font-weight: 900;
+  border-radius: 30px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.sidebar__tweet:hover {
+  background: rgb(247, 125, 255, .5);
+  transition: color 400ms ease-out;
+}
+  
+body {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: 3px;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.sidebar {
+  
+  flex: 0.2;
+  border-right: 1px solid #222;
+  min-width: 250px;
+  margin-top: 20px;
+  padding-left: 5px;
+  padding-right: 20px;
+  color: white;
+}
+
+.sidebar img {
+  width: 50px;
+}
+
+.fa-twitter {
+  color: var(--twitter-color);
+  font-size: 30px;
+}
+
+/* feed */
+.feed {
+  flex: 0.5;
+  border-right: 1px solid var(--twitter-background);
+  min-width: fit-content;
+  overflow-y: scrollbar;
+}
+
+.feed__header {
+  position: sticky;
+  top: 0;
+  background-color: #303338;
+  z-index: 100;
+  border: 1px solid var(--twitter-background);
+  padding: 15px 20px;
+  color: white;
+}
+
+.feed__header h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.feed {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* tweet box */
+.tweetbox__input img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.tweetBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--twitter-background);
+  padding-right: 10px;
+}
+
+.tweetBox form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweetbox__input {
+  display: flex;
+  padding: 20px;
+}
+
+.tweetbox__input input {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+.tweetBox__tweetButton {
+  background-color: var(--twitter-color);
+  border: none;
+  color: white;
+  font-weight: 900;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+/* post */
+.post__avatar img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.post {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 10px;
+}
+
+.post__body img {
+  width: 450px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.post__badge {
+  font-size: 14px !important;
+  color: var(--twitter-color);
+  margin-right: 5px;
+}
+
+.post__headerSpecial {
+  font-weight: 600;
+  font-size: 12px;
+  color: gray;
+}
+
+.post__headerText h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.post__headerDescription {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.post__body {
+  flex: 1;
+  padding: 10px;
+  color: white;
+  border-bottom: 1px solid #222;
+}
+
+.post__avatar {
+  padding: 20px;
+}
+
+/* widgets */
+.widgets {
+  flex: 0.3;
+}
+
+.widgets__input {
+  display: flex;
+  align-items: center;
+  background-color: #555;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.widgets__input input {
+  border: none;
+  background-color: var(--twitter-background);
+}
+
+.widgets__widgetContainer {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 20px;
+  height: 500px;
+}
+
+.widgets__widgetContainer h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.depresion {
+  width: 100%;
+  padding-top: 40px;
+}
+
+/* Página de login */
+
+.body-login-2 {
+      background: #262A2F;
+}
+
+.login-box {
+      background: #FFF;
+      padding: 30px 120px;
+      width: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      border-radius: 10px;
+}
+
+.login-box button {
+      width: 200px;
+      height: 30px;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      border-radius: 30px;
+      background: transparent;
+      border: 1px solid #999;
+      font-weight: 500;
+      cursor: pointer;
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.login-box hr {
+      border: 0;
+      height: 1px;
+      background: #C2C2C2;
+      margin: 5px;
+      width: 290px;
+}
+
+.login-box input { 
+      width: 100%;
+      background: transparent;
+      border: 1px solid #999;
+      outline: 0;
+      padding: 15px 10 px;
+      border-radius: 4px;
+      margin: 10px 0;
+      height: 30px;
+}
+
+::placeholder {
+      font-weight: 500;
+      font-size: 15px;
+      color: #333;
+}
+
+.login-box form button {
+      background: #000;
+      color: #fff;
+      width: 200px;
+      height: 30px;
+      border: 0;
+      margin-bottom: 15px;
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.login-box img {
+      width: 30px;
+}
+
+.login-box p {
+      font-size: 14px;
+      color: #555;
+      margin: 40px 0 50px;
+}
+
+.login-box p a {
+      text-decoration: none;
+      color: #359CF0;
+}
+
+/* Página de Ipsum, Cónocete a ti mismo */
+
+.body-ipsum {
+      background-color: #303338;
+      color: white;
+      padding: 0;
+      margin: 0;
+}
+
+.container-ipsum {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      flex-direction: column;
+}
+
+.container-ipsum img {
+      width: 100px;
+}
+.container-ipsum a {
+      height: 40px;
+}
+
+/* Animaciones */
+
+.text-ipsum {
+      width: 100;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum p { 
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .6s steps(53),
+      cursor .4s step-end infinite alternate;
+}
+
+.text-ipsum-1 {
+      width: 100;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-1 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .6s steps(14),
+      cursor .2s step-end infinite alternate;
+}
+.text-ipsum-3 {
+      width: 100;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-3 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing 1s steps(26),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-3-no {
+      width: 100;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-3-no p{
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing 1s steps(26),
+      cursor .2s step-end infinite alternate;
+}
+
+
+.text-ipsum-4 {
+      width: 100;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-4 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(104),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-5 {
+      width: 100;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-5 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(18),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-3-ans-no {
+      width: 100;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-3-ans-no {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .6s steps(29),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-nomeconozco {
+      width: 100;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-nomeconozco p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .6s steps(39),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-confianza {
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-confianza p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .6s steps(32),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-gracias-1 {
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.texy-ipsum-gracias-1  p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing 1.2s steps(8),
+      cursor .2s step-end infinite alternate;
+}
+
+.input-ipsum {
+      width: 100%;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-top: 50px;
+      font-size: 50px;
+
+}
+
+.div-textarea {
+      position: absolute;
+}
+
+.input-ipsum textarea {
+      width: 500px;
+      height: 200px;
+}
+
+.div-submit {
+      position: relative;
+      top: 150px;
+}
+.input-ipsum input {
+      background-color: #F77DFF;
+      border: none;
+      color: white;
+      font-weight: 900;
+      border-radius: 30px;
+      width: 80px;
+      height: 40px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin: 50px;
+
+}
+
+.input-ipsum input:hover {
+      cursor: pointer;
+
+}
+
+.submit {
+      background-color: #F77DFF;
+      border: none;
+      color: white;
+      font-weight: 900;
+      border-radius: 30px;
+      width: 110px;
+      height: 60px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin: 50px;
+
+}
+
+.submit:hover {
+      cursor: pointer;
+      background-color: rgb(247, 125, 255, 0.5);
+}
+
+.text-ipsum-6 {
+      width: 100;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-6 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing 1s steps(52),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-8 {
+      width: 100;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+
+}
+
+.text-ipsum-8 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(18),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-9 {
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-9 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(13),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-9-no {
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-9-no p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(37),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-9-si {
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-9-si p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(35),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-10 {
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-10 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(14),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-11 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-11 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(40),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-12 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-12 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(19),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-13 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-13 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(14),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-14 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+
+}
+
+.text-ipsum-14 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(41),
+      cursor .2s step-end infinite alternate;
+  }
+
+.text-ipsum-15 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-15 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .5s steps(41),
+      cursor .2s step-end infinite alternate;
+  }
+
+.text-ipsum-16 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-16 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(10),
+      cursor .2s step-end infinite alternate;
+  }
+
+.text-ipsum-18 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-18 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(9),
+      cursor .2s step-end infinite alternate;
+  }
+
+.text-ipsum-19 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-19 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .7s steps(44),
+      cursor .2s step-end infinite alternate;
+  }
+
+.text-ipsum-20 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-20 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(26),
+      cursor .2s step-end infinite alternate;
+  }
+
+.text-ipsum-22 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-22 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(21),
+      cursor .2s step-end infinite alternate;
+  }
+
+.text-ipsum-23 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-23 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(33),
+      cursor .2s step-end infinite alternate;
+}  
+
+.text-ipsum-24 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-24 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(31),
+      cursor .2s step-end infinite alternate;
+}  
+
+.text-ipsum-25 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-25 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(32),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-26 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-26 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(41),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-27 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-27 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(39),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-30 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-30 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(43),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-32 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-32 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(36),
+      cursor .2s step-end infinite alternate;
+}        
+
+.text-ipsum-33 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-33 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(40),
+      cursor .2s step-end infinite alternate;
+} 
+
+.text-ipsum-34 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-34 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(37),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-35 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-35 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(25),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-36 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-36 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(10),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-37 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-37 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(22),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-40 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-40 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(11),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-41 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-41 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(23),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-43 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-43 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(16),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-44 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-44 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(29),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-46 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-46 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(25),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-47 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-47 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(28),
+      cursor .2s step-end infinite alternate;
+}
+
+.text-ipsum-49 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 50px;
+}
+
+.text-ipsum-49 p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: 
+      typing .3s steps(41),
+      cursor .2s step-end infinite alternate;
+}
+
+.photo-ipsum {
+      
+}
+
+.photo-ipsum img {
+      width: 200px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+}
+
+.img-ipsum-1 {
+      width: 230px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      padding: auto;
+}
+
+@keyframes cursor {
+      50% { border-color: transparent }
+}
+
+@keyframes typing {
+      from { width: 0 }
+}
+
+.text-color {
+      color: #F77DFF;
+}
+/* Botones */
+
+.ans-1 {
+      background-color: #F77DFF;
+      border: none;
+      color: white;
+      font-weight: 900;
+      border-radius: 30px;
+      width: 180px;
+      height: 60px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin: 50px;
+}
+
+.ans-1:hover {
+      cursor: pointer;
+      background-color: rgb(247, 125, 255, 0.5);
+
+}
+
+.ansborder-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      padding: 10px;
+}
+
+.italic-text {
+      font-style: italic;
+}
+
+.italic-text-color {
+      font-style: italic;
+      color: #F77DFF;
+}
+
+/*Video*/
+
+.video-1 {
+      width: 500px;
+}
+
+/* JavaScript */
+
+.error {
+      color: salmon;
+      display: block;
+}
+
+.main-logo {
+      width: 100%;
+}
